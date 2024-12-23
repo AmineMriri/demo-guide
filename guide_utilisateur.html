@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Utilisateur de l'Application Healio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #bbbbbb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #18495EFF;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .logo {
+            height: 60px;
+            margin-right: 50px;
+            /* Space between logo and title */
+        }
+
+        .title {
+            font-size: 1.5rem;
+            /* Adjust title size as needed */
+        }
+
+        nav {
+            background-color: rgb(17, 56, 73);
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: dashed;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0EBFB5FF;
+        }
+
+        section {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: #f0efef;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            color: #004080;
+            border-bottom: 2px solid #18495EFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .screenshot {
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #18495EFF;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .persistent-link {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(24, 73, 94, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 200;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .persistent-link a {
+            color: #00e5ff;
+            text-decoration: underline;
+        }
+
+        .persistent-link a:hover {
+            color: #0EBFB5FF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/healio.png" alt="Healio Logo" class="logo" />
+            <h1>Guide Utilisateur de l'Application Healio</h1>
+        </div>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="#navigation">1. Navigation</a></li>
+            <li><a href="#accueil">2. Page d'accueil</a></li>
+            <li><a href="#docs">3. Page des Prestataires</a></li>
+            <li><a href="#notifs">4. Page des Notifications</a></li>
+        </ul>
+    </nav>
+
+    <section id="navigation">
+        <h2>1. Navigation</h2>
+        <p style="font-weight: bold;">L'application se compose de trois sections principales :</p>
+        <ul>
+            <li><b>1 :Panneau de gauche</b>: Accès à la navigation via le menu (Home, Docs, Notifd).</li>
+            <li><b>2 :Panneau central</b>: Affichage du contenu de la page sélectionnée.</li>
+            <li><b>3 :Panneau droit</b>: Accès au profil de l'utilisateur.</li>
+            <div class="screenshot">
+                <img src="images/Navigation.png" alt="Capture d'écran des réclamations médicales">
+                <p>Capture d'écran des Panneaux de l'application</p>
+            </div>
+        </ul>
+    </section>
+
+    <section id="accueil">
+        <h2>2. Page d'accueil</h2>
+        <p style="font-weight: bold;">La page d'accueil affiche les réclamations médicales de l'utilisateur organisées
+            en trois colonnes :</p>
+        <ul>
+            <li><b>1 :"Traité"</b> : Réclamations traitées.</li>
+            <li><b>2 :"En cours"</b> : Réclamations en cours.</li>
+            <li><b>3 :"Tous"</b> : Toutes les réclamations.</li>
+        </ul>
+        <p><b>4 : Recherche par N° de bulletin</b></p>
+        <p>Les filtres disponibles sont :</p>
+        <ul>
+            <li><b>5 :Bénéficiaire</b></li>
+            <li><b>6 :Date minimale</b></li>
+            <li><b>7 :Date maximale</b></li>
+        </ul>
+        <div class="screenshot">
+            <img src="images/BS screen.png" alt="Capture d'écran des réclamations médicales">
+            <p>Capture d'écran des réclamations médicales</p>
+        </div>
+
+    </section>
+
+    <section id="docs">
+        <h2>3. Page des Prestataires</h2>
+        <p>Cette page permet à l'utilisateur de rechercher des prestataires de santé en appliquant des filtres comme :
+        </p>
+        <ul>
+            <li>Région</li>
+            <li>Spécialité</li>
+        </ul>
+        <div class="screenshot">
+            <img src="images/Prestataire Screen.png" alt="Capture d'écran des prestataires avec filtre">
+            <p>Capture d'écran des prestataires avec filtre</p>
+        </div>
+        <ul>
+            <li>Aprés l'utilisateur pris un filter il peut chercher des prestataires de santé par nom :</li>
+        </ul>
+        <div class="screenshot">
+            <img src="images/Prestataire Search Screen.png"
+                alt="Capture d'écran des prestataires avec filtre par spécialité">
+            <p>Capture d'écran des prestataires avec filtre par spécialité</p>
+        </div>
+    </section>
+
+    <section id="notifs">
+        <h2>4. Page des Notifications</h2>
+        <p>Cette page affiche une liste des notifications concernant les réclamations médicales. En cliquant sur une
+            notification, vous serez redirigé vers la réclamation correspondante sur la page d'accueil.</p>
+        <div class="screenshot">
+            <img src="images/Notif Screen.png" alt="Capture d'écran de la page des notifications">
+            <p>Capture d'écran de la page des notifications</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Healio. Tous droits réservés.</p>
+    </footer>
+</body>
+<div class="persistent-link">
+    <p>
+        Powered by <a href="https://healio.tech" target="_blank" class="healio-link">Healio</a>
+    </p>
+    
+</div>
+
+
+</html>
